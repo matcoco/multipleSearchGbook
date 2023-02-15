@@ -12,7 +12,7 @@ function convertToRequest(){
     tab = list.trim().split("\n")
     tab.pop();
     for(let i = 0; i < tab.length; i++){
-        if(tab[i]) resultat += `"${tab[i]}",`
+        if(tab[i]) resultat += `'${tab[i]}',`
         if(i === tab.length - 1) resultat += `"${tab[i]}")`
     }
 
